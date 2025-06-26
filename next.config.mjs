@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+    domains: ['jobs-dashboard-psi.vercel.app'],
+  },
+};
 
 export default nextConfig;
