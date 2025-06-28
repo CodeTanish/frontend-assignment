@@ -10,8 +10,10 @@
       <>
       <Navbar/>
 
-      <Sidebar/>
-      <Main/>
+      <div className="flex min-h-screen">
+      <Sidebar />
+      <Main />
+    </div>
       </>
     );
   }

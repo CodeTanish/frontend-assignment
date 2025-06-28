@@ -20,7 +20,7 @@ const ReviewDonutChart = () => {
   };
 
   const options = {
-    cutout: '70%', // makes it look like a donut
+    cutout: '60%', // makes it look like a donut
     responsive: true,
     plugins: {
       legend: {
@@ -49,7 +49,7 @@ const ReviewDonutChart = () => {
   return (
     <div
       style={{
-        width: '342px',
+        width: '342',
         height: '222',
         backgroundColor: 'white',
         borderRadius: '12px',

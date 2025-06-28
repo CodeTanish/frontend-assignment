@@ -25,7 +25,7 @@ const BarChart = () => {
         data: [80, 50, 110],
         backgroundColor: ['#9400D3', '#9370DB', '#87CEFA'], // Violet, Medium Purple, Light Blue
         borderRadius: 10,
-        barThickness: 30,
+        barThickness: 50,
       },
     ],
   };
@@ -50,6 +50,7 @@ const BarChart = () => {
       },
       y: {
         ticks: {
+          display: false,
           color: '#444',
           font: {
             size: 14,
@@ -69,7 +70,7 @@ const BarChart = () => {
         Your Job Postings
       </h3>
       <Bar data={data} options={options} />
-      <div className="flex flex-wrap justify-center gap-6 mt-6">
+      <div className="flex flex-row justify-center gap-6 mt-6">
         <LegendItem color="#9400D3" label="Private Equity - Associate" />
         <LegendItem color="#9370DB" label="Associate - Software Engineer" />
         <LegendItem color="#87CEFA" label="Frontend - trainee" />
@@ -79,9 +80,9 @@ const BarChart = () => {
 };
 
 const LegendItem = ({ color, label }) => (
-  <div className="flex items-center space-x-2">
+  <div className="flex items-center space-x-2 text-2xl font-bold">
     <span
-      className="inline-block w-4 h-4 rounded-sm"
+      className="inline-block w-8 h-8 rounded-sm"
       style={{ backgroundColor: color }}
     ></span>
     <span className="text-sm text-gray-700">{label}</span>
